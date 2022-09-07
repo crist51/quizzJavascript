@@ -1,0 +1,198 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    /*prend en compte les bordure et les pading dans les largeur*/
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: Open sans, sans-serif;
+    padding: clamp (20px 5vw 50px) 20px 10px;
+}
+
+section{
+    padding: 50px;
+}
+
+fieldset{
+    margin:25px 0
+}
+
+fieldset div{
+    margin: 10px 0;
+}
+
+h1{
+    font-family: roboto, sans-serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    /*espace entre les lettre*/
+    text-align: center;
+    color:  #0e0e0e;
+    background: #f1f1f123;
+    border-radius: 33px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+h1 span{
+    font-weight: 800;
+}
+
+.global-container{
+    max-width: 800px;
+    /*au max ce container fera 800px , sinim sa ce réduit*/
+    margin: 0 auto;
+    /* seras centre margin 0 auto*/
+}
+
+.question-block{
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 33px;
+    background: #f1f1f1;
+    box-shadow: 0 5px 10px rgba(104,104,104,0.5);
+}
+
+.question-block > div{
+    /*les div imbriqué au 1er niveau (input et label*/
+    margin: 10px 0;
+}
+
+.question-block h2{
+    background: #0c43aa;
+    color: white;
+    padding: 5px 0 !important;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+label, input[type="radio"]{
+    /*selectionne input de type "radio" */
+    cursor: pointer;
+}
+
+.question-block label{
+    font-size: 20px;
+}
+
+.question-block input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+.question-block p{
+    text-align: right;
+}
+
+form button{
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: #fff;
+    min-width: 200px;
+    padding: 15px 5px;
+    font-size:20px;
+    cursor: pointer;
+    border: none;
+    box-shadow:  0 3px 5px  rgba(0,0,0,0.2);
+}
+
+form button:hover{
+    background-color: #fafafa;
+}
+
+.result{
+    padding: 20px;
+    margin: 10px 0 70px;
+    border-radius: 5px;
+    box-shadow:  0 3px 5px  rgba(0,0,0,0.2);
+    background-color: #fff;
+}
+
+.result h2{
+    font-size: 22px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+.result h2 span{
+    font-weight: 700;
+}
+
+.result h2, .help{
+    text-align: center;
+}
+
+.help, mark{
+    margin-top: 20px;
+}
+
+.help{
+    font-size: 20px;
+}
+
+.mark{
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+.mark span{
+    font-weight: 700;
+}
+
+.soluce{
+    text-align: left !important;
+}
+
+.lien{
+    background-color: #0c43aa;
+    color: wheat;
+    padding: 5px 20px;
+    border-radius: 33px;
+    text-decoration: none;
+}
+
+.lien:hover{
+    background-color: #0c43aabb;
+}
+
+
+footer{
+    background: #f1f1f123;
+    padding: 25px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    display: block;
+    text-align: center;
+    background-color: #696969 !important;
+}
+
+/* --------------------------------------- Particule --------------------------------------- */
+
+canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background : linear-gradient(to right, #000000, #696969);
+    z-index: -1;
+}

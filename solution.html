@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quizz</title>
+    <!-- <meta description:"questionnaire"> -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <canvas></canvas>
+    <main>
+      <section>
+        <div class="global-container">
+          <h1>Javascript <span>Solution</span></h1>
+          <div class="quiz-form">
+
+            <div class="question-block">
+              <h2>true + false</h2>
+
+              <div>
+                <div>
+                  <input type="radio" id="q1-a" name="q1" value="a" />
+                  <label for="q1-a">"truefalse"</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q1-b" name="q1" value="b" checked/>
+                  <label for="q1-b">1</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q1-c" name="q1" value="c" />
+                  <label for="q1-c">NaN</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q1-d" name="q1" value="d" />
+                  <label for="q1-d">SyntaxError</label>
+                </div>
+              </div>
+              <p class="soluce">Selon la spécification du langage ECMAScript, les deux valeurs booléennes sont converties en leurs homologues 
+                numériques</p>
+              <p>01/25</p>
+            </div>
+
+            <div class="question-block">
+              <h2>[,,,].length</h2>
+
+              <div>
+                <div>
+                  <input type="radio" id="q2-a" name="q2" value="a" />
+                  <label for="q2-a">0</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q2-b" name="q2" value="b" checked/>
+                  <label for="q2-b">3</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q2-c" name="q2" value="c" />
+                  <label for="q2-c">4</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q2-d" name="q2" value="d" />
+                  <label for="q2-d">SyntaxError</label>
+                </div>
+              </div>
+              <p class="soluce">génère un tableau avec trois emplacements vides. La dernière virgule est une virgule de fin.</p>
+              <p>02/25</p>
+            </div>
+
+            <div class="question-block">
+              <h2>[1, 2, 3] + [4, 5, 6]</h2>
+
+              <div>
+                <div>
+                  <input type="radio" id="q3-a" name="q3" value="a" />
+                  <label for="q3-a">"123456"</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q3-b" name="q3" value="b" checked/>
+                  <label for="q3-b">"1,2,34,5,6"</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q3-c" name="q3" value="c" />
+                  <label for="q3-c">"1,2,3,4,5,6"</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q3-d" name="q3" value="d" />
+                  <label for="q3-d">"NaN"</label>
+                </div>
+              </div>
+              <p class="soluce">The extremely simplified answer is that the arrays are converted to strings and are then concatenated. 
+                See Denys Dovhan's explanation for how this happens. To learn more about this behavior, visit this StackOverflow answer for a mid-level explanation or this blog post for a more detailed one.</p>
+              <p>03/25</p>
+            </div>
+
+            <div class="question-block">
+              <h2>0.2 + 0.1 === 0.3</h2>
+
+              <div>
+                <div>
+                  <input type="radio" id="q4-a" name="q4" value="a"  />
+                  <label for="q4-a">true</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q4-b" name="q4" value="b" checked/>
+                  <label for="q4-b">false</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q4-c" name="q4" value="c" />
+                  <label for="q4-c">NaN</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q4-d" name="q4" value="d" />
+                  <label for="q4-d">SyntaxError</label>
+                </div>
+              </div>
+              <p class="soluce">Il s'agit d'un dilemme standard de comparaison de valeurs à virgule flottante. Au lieu de comparer 
+                directement deux virgules flottantes, il faut comparer les virgules flottantes avec un certain niveau de tolérance.</p>
+              <p>04/25</p>
+            </div>
+
+            <div class="question-block">
+              <h2>10,2</h2>
+
+              <div>
+                <div>
+                  <input type="radio" id="q5-a" name="q5" value="a"  />
+                  <label for="q5-a">10,2</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q5-b" name="q5" value="b" />
+                  <label for="q5-b">10</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q5-c" name="q5" value="c" checked/>
+                  <label for="q5-c">2</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q5-d" name="q5" value="d" />
+                  <label for="q5-d">20</label>
+                </div>
+              </div>
+              <p class="soluce">L'opérateur virgule renvoie simplement la valeur du dernier opérande.</p>
+              <p>05/25</p>
+            </div>
+
+            <div class="question-block">
+              <h2>!!""</h2>
+
+              <div>
+                <div>
+                  <input type="radio" id="q6-a" name="q6" value="a"  />
+                  <label for="q6-a">"true"</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q6-b" name="q6" value="b" checked/>
+                  <label for="q6-b">false</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q6-c" name="q6" value="c" />
+                  <label for="q6-c">undefined</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q6-d" name="q6" value="d" />
+                  <label for="q6-d">SyntaxError</label>
+                </div>
+              </div>
+              <p class="soluce">Vous pouvez ajouter deux points d'exclamation avant toute valeur pour obtenir sa primitive booléenne 
+                correspondante. Le terme technique pour cela est double NOT (oui, vraiment, Borat adorerait ça). La conversion est basée sur la véracité ou la fausseté de la valeur.</p>
+              <p>06/25</p>
+            </div>
+
+            <div class="question-block">
+              <h2>+!![]</h2>
+
+              <div>
+                <div>
+                  <input type="radio" id="q7-a" name="q7" value="a"  />
+                  <label for="q7-a">true</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q7-b" name="q7" value="b" />
+                  <label for="q7-b">false</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q7-c" name="q7" value="c" />
+                  <label for="q7-c">0</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q7-d" name="q7" value="d" checked/>
+                  <label for="q7-d">1</label>
+                </div>
+              </div>
+              <p class="soluce">Les tableaux sont véridiques, donc le double opérateur NOT affichera vrai. Le caractère plus convertit 
+                alors vrai en sa représentation numérique : 1.</p>
+              <p>07/25</p>
+            </div>
+
+            <div class="question-block">
+              <h2>parseInt(0.0000005)</h2>
+
+              <div>
+                <div>
+                  <input type="radio" id="q8-a" name="q8" value="a" />
+                  <label for="q8-a">0</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q8-b" name="q8" value="b" />
+                  <label for="q8-b">1</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q8-c" name="q8" value="c" checked/>
+                  <label for="q8-c">5</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q8-d" name="q8" value="d" />
+                  <label for="q8-d">"NaN"</label>
+                </div>
+              </div>
+              <p class="soluce">La fonction parseInt convertit son premier argument en une chaîne (si ce n'est pas déjà le cas), puis en un 
+                nombre. Lorsque 0.0000005 est converti en chaîne</p>
+              <p>08/25</p>
+            </div>
+
+            <div class="question-block">
+              <h2>true == "true"</h2>
+
+              <div>
+                <div>
+                  <input type="radio" id="q9-a" name="q9" value="a" />
+                  <label for="q9-a">true</label>
+
+                </div>
+
+                <div>
+                  <input type="radio" id="q9-b" name="q9" value="b" checked/>
+                  <label for="q9-b">false</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q9-c" name="q9" value="c" />
+                  <label for="q9-c">undefined</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q9-d" name="q9" value="d" />
+                  <label for="q9-d">SyntaxError</label>
+                </div>
+              </div>
+              <p class="soluce">Selon les règles de comparaison d'égalité abstraite, ces deux valeurs sont converties en nombres lors de la 
+                comparaison.</p>
+              <p>09/25</p>
+            </div>
+
+            <div class="question-block">
+              <h2>010 - 03</h2>
+
+              <div>
+                <div>
+                  <input type="radio" id="q10-&" name="q10" value="a" />
+                  <label for="q10-&">7</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q10-b" name="q10" value="b" checked/>
+                  <label for="q10-b">5</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q10-c" name="q10" value="c" />
+                  <label for="q10-c">3</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q10-d" name="q10" value="d" />
+                  <label for="q10-d">NaN</label>
+                </div>
+              </div>
+              <p class="soluce">010 est traité comme un nombre octal par JavaScript. Ainsi, sa valeur est en base 8. Le MDN Web Docs fournit 
+                une brève explication des nombres octaux.</p>
+              <p>10/25</p>
+            </div>
+
+            <div class="question-block">
+              <h2>"" - - ""</h2>
+
+              <div>
+                <div>
+                  <input type="radio" id="q11-a" name="q11" value="a" />
+                  <label for="q11-a">""</label>
+                </div>
+              
+                <div>
+                 <input type="radio" id="q11-b" name="q11" value="b" checked/>
+                  <label for="q11-b">0</label>
+                </div>
+              
+              <div>
+              <input type="radio" id="q11-c" name="q11" value="c" />
+              <label for="q11-c">NaN</label>
+              </div>
+              
+                <div>
+                  <input type="radio" id="q11-d" name="q11" value="d" />
+                  <label for="q11-d">SyntaxError</label>
+                </div>
+              </div>
+              <p class="soluce">Ces deux chaînes vides sont toutes deux converties en 0.</p>
+             <p>11/25</p>
+            </div>
+
+            <div class="question-block">
+              <h2>null + 0</h2>
+
+              <div>
+                <div>
+                  <input type="radio" id="q12-a" name="q12" value="a" checked />
+                  <label for="q12-a">0</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q12-b" name="q12" value="b" />
+                  <label for="q12-b">"null0"</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q12-c" name="q12" value="c" />
+                  <label for="q12-c">NaN</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q12-d" name="q12" value="d" />
+                  <label for="q12-d">TypeError</label>
+                </div>
+              </div>
+              <p class="soluce">Null convertit en sa représentation numérique</p>
+              <p>12/25</p>
+            </div>
+
+            <div class="question-block">
+              <h2>0/0</h2>
+
+              <div>
+                <div>
+                  <input type="radio" id="q13-a" name="q13" value="a" />
+                  <label for="q13-a">"0"</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q13-b" name="q13" value="b" />
+                  <label for="q13-b">inifnity</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q13-c" name="q13" value="c" checked/>
+                  <label for="q13-c">NaN</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q13-d" name="q13" value="d" />
+                  <label for="q13-d">"SyntaxError"</label>
+                </div>
+              </div>
+              <p class="soluce">Comme il n'y a pas de réponse numérique significative à l'équation 0/0, la sortie est simplement NaN.</p>
+              <p>13/25</p>
+            </div>
+
+            <div class="question-block">
+              <h2>1/0 > 10 ** 1000</h2>
+
+              <div>
+                <div>
+                  <input type="radio" id="q14-a" name="q14" value="a" />
+                  <label for="q14-a">true</label>
+
+                </div>
+
+                <div>
+                  <input type="radio" id="q14-b" name="q14" value="b" checked/>
+                  <label for="q14-b">false</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q14-c" name="q14" value="c" />
+                  <label for="q4-c">NaN</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="q14-d" name="q14" value="d" />
+                  <label for="q14-d">SyntaxError</label>
+                </div>
+              </div>
+              <p class="soluce">JavaScript traite ces deux valeurs comme infinies, et l'infini est égal à l'infini. En savoir plus sur les 
+                infinis.</p>
+              <p>14/25</p>
+            </div>
+            
+            <div class="question-block">
+              <h2>true++</h2>
+              
+              <div>
+                <div>
+                  <input type="radio" id="q15-a" name="q15" value="a" />
+                  <label for="q15-a">1</label>
+                </div>
+                
+                <div>
+                  <input type="radio" id="q15-b" name="q15" value="b" />
+                  <label for="q15-b">2</label>
+                </div>
+                
+                <div>
+                  <input type="radio" id="q15-c" name="q15" value="c" />
+                  <label for="q15-c">NaN</label>
+                </div>
+                
+                <div>
+                  <input type="radio" id="q15-d" name="q15" value="d" checked/>
+                  <label for="q15-d">SyntaxError</label>
+                </div>
+              </div>
+              <p class="soluce">Notre première et unique erreur de syntaxe. J'ai proposé l'option SyntaxError pour un grand nombre de 
+                questions, en espérant que certains utilisateurs trouveraient une syntaxe si bizarre qu'elle ne pourrait être autorisée. 
+                J'ai donc estimé que je devais ajouter au moins une expression qui entraîne effectivement une SyntaxError.</p>
+              <p>15/25</p>
+            </div>
+
+            <div class="question-block">
+              <h2>"" - 1</h2>
+          
+              <div>
+                <div>
+                  <input type="radio" id="16-a" name="q16" value="a"  />
+                  <label for="16-a">"1"</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="16-b" name="q16" value="b" />
+                  <label for="q16-b">"-1"</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q16-c" name="q16" value="c" checked/>
+                  <label for="q16-c">-1</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q16-d" name="q16" value="d" />
+                  <label for="q16-d">NaN</label>
+                </div>
+              </div>
+              <p class="soluce">Alors que l'opérateur d'addition (+) est utilisé à la fois pour les nombres et les chaînes, 
+                l'opérateur de soustraction (-) n'a aucune utilité pour les chaînes, donc JavaScript interprète cela comme une opération entre des nombres. Une chaîne vide est de type contraint à 0.</p>
+              <p>16/25</p>
+            </div>
+          
+            <div class="question-block">
+              <h2>(null - 0) + "0"</h2>
+          
+              <div>
+                <div>
+                  <input type="radio" id="q17-a" name="q17" value="a"  />
+                  <label for="q17-a">"null0"</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q17-b" name="q17" value="b" checked/>
+                  <label for="q17-b">"00"</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q17-c" name="q17" value="c" />
+                  <label for="q17-c">0</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q17-d" name="q17" value="d" />
+                  <label for="q17-d">NaN</label>
+                </div>
+              </div>
+              <p class="soluce">null est contraint à 0</p>
+              <p>17/25</p>
+            </div>
+          
+            <div class="question-block">
+              <h2>true + ("true" - 0)</h2>
+          
+              <div>
+                <div>
+                  <input type="radio" id="q18-a" name="q18" value="a"  />
+                  <label for="q18-a">1</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q18-b" name="q18" value="b" />
+                  <label for="q18-b">2</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q18-c" name="q18" value="c" checked/>
+                  <label for="q18-c">NaN</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q18-d" name="q18" value="d" />
+                  <label for="q18-d">SyntaxError</label>
+                </div>
+              </div>
+              <p class="soluce">On pourrait penser que le langage JS est tellement banal qu'il convertit la chaîne de caractères "true" en 
+                représentation numérique du booléen true. Mais ce n'est pas tout à fait le cas. Ce qui se passe en fait, c'est qu'il essaie 
+                de convertir la chaîne de caractères en un nombre et échoue.</p>
+              <p>18/25</p>
+            </div>
+          
+            <div class="question-block">
+              <h2>!5 + !5</h2>
+          
+              <div>
+                <div>
+                  <input type="radio" id="q19-a" name="q19" value="a" checked />
+                  <label for="q19-a">0</label>
+          
+                </div>
+          
+                <div>
+                  <input type="radio" id="q19-b" name="q19" value="b" />
+                  <label for="q19-b">10</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q19-c" name="q19" value="c" />
+                  <label for="q19-c">25</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q19-d" name="q19" value="d" />
+                  <label for="q19-d">NaN</label>
+                </div>
+              </div>
+              <p class="soluce">Placer un point d'exclamation solennel, également connu sous le nom d'opérateur logique NOT, avant une 
+                valeur non booléenne la convertira en une valeur booléenne opposée à ce que la fonction booléenne la convertirait.</p>
+              <p>19/25</p>
+            </div>
+          
+            <div class="question-block">
+              <h2>[] + []</h2>
+          
+              <div>
+                <div>
+                  <input type="radio" id="q20-a" name="q20" value="a"  />
+                  <label for="q20-a">[]</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q20-b" name="q20" value="b" />
+                  <label for="q20-b">[,]</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q20-c" name="q20" value="c" checked/>
+                  <label for="q20-c">""</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q20-d" name="q20" value="d" />
+                  <label for="q20-d">NaN</label>
+                </div>
+              </div>
+              <p class="soluce">Encore une fois, la réponse extrêmement simplifiée est que JavaScript convertit les tableaux en chaînes. 
+                Faites défiler jusqu'à la question 3 pour trouver des ressources qui expliquent ce comportement.</p>
+              <p>20/25</p>
+            </div>
+
+            <div class="question-block">
+              <h2>1 + 2 + "3"</h2>
+          
+              <div>
+                <div>
+                  <input type="radio" id="q21-a" name="q21" value="a"  />
+                  <label for="q21-a">"6"</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q21-b" name="q21" value="b" />
+                  <label for="q21-b">"123"</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q21-c" name="q21" value="c" checked/>
+                  <label for="q21-c">"33"</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q21-d" name="q21" value="d" />
+                  <label for="q21-d">NaN</label>
+                </div>
+              </div>
+              <p class="soluce">JavaScript exécutera ces opérations de gauche à droite. La concaténation de chaînes aura la priorité 
+                lorsque le nombre trois est ajouté à la chaîne trois</p>
+              <p>21/25</p>
+            </div>
+          
+            <div class="question-block">
+              <h2>typeof NaN</h2>
+          
+              <div>
+                <div>
+                  <input type="radio" id="q22-a" name="q22" value="a" checked />
+                  <label for="q22-a">"number"</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q22-b" name="q22" value="b" />
+                  <label for="q22-b">"nan"</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q22-c" name="q22" value="c" />
+                  <label for="q22-c">"undefined"</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q22-d" name="q22" value="d" />
+                  <label for="q22-d">"object"</label>
+                </div>
+              </div>
+              <p class="soluce">La spécification du langage <a href="https://262.ecma-international.org/5.1/#sec-4.3.23" target="_blank">
+                ECMAScript</a> explique NaN comme une valeur numérique qui est une valeur IEEE 754 "Not-a-Number". Cela peut sembler étrange, 
+                mais c'est un principe commun en informatique</p>
+              <p>22/25</p>
+            </div>
+          
+            <div class="question-block">
+              <h2>undefined + false</h2>
+          
+              <div>
+                <div>
+                  <input type="radio" id="q23-a" name="q23" value="a" />
+                  <label for="q23-a">"undefinedfalse"</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q23-b" name="q23" value="b" />
+                  <label for="q23-b">0</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q23-c" name="q23" value="c" checked/>
+                  <label for="q23-c">NaN</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q23-d" name="q23" value="d" />
+                  <label for="q23-d">SyntaxError</label>
+                </div>
+              </div>
+              <p class="soluce">Alors que false peut être converti en nombre, undefined ne le peut pas.
+              </p>
+              <p>23/25</p>
+            </div>
+          
+           <div class="question-block">
+              <h2>"" && -0</h2>
+          
+              <div>
+                <div>
+                  <input type="radio" id="q24-a" name="q24" value="a" checked />
+                  <label for="q24-a">true</label>
+          
+                </div>
+          
+                <div>
+                  <input type="radio" id="q24-b" name="q24" value="b" />
+                  <label for="q24-b">false</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q24-c" name="q24" value="c" checked/>
+                  <label for="q24-c">""</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q24-d" name="q24" value="d" />
+                  <label for="q24-d">-0</label>
+                </div>
+              </div>
+              <p class="soluce">Il est fort probable que vous n'ayez jamais utilisé l'opérateur logique AND que dans des expressions if, 
+                mais lorsqu'il est utilisé seul, il renvoie en fait la valeur de l'un des opérandes. Si la première expression est vraie, 
+                il renvoie la seconde. Sinon, il renvoie la première. Une chaîne vide est fausse, elle renvoie donc le premier opérande.</p>
+              <p>24/25</p>
+            </div>
+          
+            <div class="question-block">
+              <h2>+!!NaN * "" - - [,]</h2>
+          
+              <div>
+                <div>
+                  <input type="radio" id="q25-a" name="q25" value="a" checked />
+                  <label for="q25-a">0</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q25-b" name="q25" value="b" />
+                  <label for="q25-b">"0"</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q25-c" name="q25" value="c" />
+                  <label for="q25-c">NaN</label>
+                </div>
+          
+                <div>
+                  <input type="radio" id="q25-d" name="q25" value="d" />
+                  <label for="q25-d">SyntaxError</label>
+                </div>
+              </div>
+              <p class="soluce">The finale combines some of the bizarre syntax that I've covered in this quiz. I've explained all of this 
+                behavior already in the explanations above, except for the multiplication operator (*), which will coerce the empty string 
+                into its numeric equivalent: 0.</p>
+              <p>25/25</p>
+            </div>
+        </div>
+
+        </div>
+      </section>
+    </main>
+    <footer>
+        <p><a class="lien" href="./index.html">Retour</a></p>
+    </footer>
+  </body>
+  <script src="./app.js"></script>
+</html>
